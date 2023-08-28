@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boots/css/">
+    <title>the light one</title>
+</head>
+<body>
+    <div class="main container my-5">
+        <nav>
+            <img src="menu.png" alt="Oops!" class="menu">
+            <img src="logo.png" alt="Oops!" class="logo">
+            <ul class="collapse">
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Modern</a></li>
+                <li><a href="#">Contemporary</a></li>
+                <li><a href="#">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="toactive()" id="btn"><span></span></button>
+        </nav>
+        <div class="cont">
+            <img src="lamp.png" class="lamp">
+            <img src="light.png" class="light" id="last">
+        </div>
+        <div class="text">
+            <h1>Latest<br> in Lighting</h1>
+            <p>This is the first lamp from our company. We're making a huge collection of modern<br> Lamps in
+             all categories 
+            from home use to office </p>
+            <button>Check All collection</button>
+        </div>
+    </div>
+    <script>
+        let magic = document.getElementById("btn");
+        let btn1 = document.getElementById("last");
+        function toactive()
+        {
+             magic.classList.toggle("active");
+             btn1.classList.toggle("on");
+        }
+    </script>
+    <script src="boots/js/"></script>
+</body>
+</html>
